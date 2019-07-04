@@ -23,5 +23,20 @@ public class LabelRectangleTest {
 		//Assert.assertEquals(expected, actualResult);
 	}
 	
+	@Test 
+	public void testArrayCompare()
+	{
+		//given
+		int [] array1 = {50, 20, 10, 5, 12, 20};
+		int [] array2 = {50, 20, 10, 5, 12};
+		String expected="Not equal! Lengths are different";
+		//when
+		 String Result= TestClass.CompareArrays(array1, array2);
+		//then
+		Assert.assertEquals(expected, Result);
+		
+		
+	}
+	
 	
 }

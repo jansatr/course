@@ -14,12 +14,12 @@ public class LabelRectangleArea {
 	//	Array();
 		
 		//Intermediate
-		Dates();
+		//Dates();
 		//Primenumber();
 		//ATM();
 		
 		//Advanced
-		//Arrays();
+		Arrays();
 		
 		//Varia
 		//SortFromSmallest();
@@ -108,41 +108,46 @@ public class LabelRectangleArea {
 
 	private static void Arrays() {
 		// TODO Auto-generated method stub
-		int [] array1 = {50, 20, 10, 5, 12};
+		int [] array1 = {50, 20, 10, 5, 12, 20};
 		int [] array2 = {50, 20, 10, 5, 12};
-		if (array1.length == array2.length)
-		{
-			for (int i=0; i<array1.length; i++)
-			{
-				if (array1[i]!=array2[i])
-				{
-					System.out.println("Not equal!");
-					break;
-				}
-			}
-		}
-		else
-		{
-			System.out.println("Not equal! Lengths are different");
-		}
-		int temp=0;
-		for (int i=0; i<array2.length; i++)
-		{
-			for (int j=0; j<array2.length;j++)
-			{
-				if (array2[j] > array2[i])
-				{
-					temp=array2[i];
-					array2[i]=array2[j];
-					array2[j]=temp;
-				}
-			}
-		}
-		for (int i=0; i<array2.length; i++)
-		{
-			
-			System.out.println("Array: " + array2[i] );
-		}
+		
+		TestClass.CompareArrays(array1, array2);
+		
+		TestClass.SortArray(array2);
+//		
+//		if (array1.length == array2.length)
+//		{
+//			for (int i=0; i<array1.length; i++)
+//			{
+//				if (array1[i]!=array2[i])
+//				{
+//					System.out.println("Not equal!");
+//					break;
+//				}
+//			}
+//		}
+//		else
+//		{
+//			System.out.println("Not equal! Lengths are different");
+//		}
+//		int temp=0;
+//		for (int i=0; i<array2.length; i++)
+//		{
+//			for (int j=0; j<array2.length;j++)
+//			{
+//				if (array2[j] > array2[i])
+//				{
+//					temp=array2[i];
+//					array2[i]=array2[j];
+//					array2[j]=temp;
+//				}
+//			}
+//		}
+//		for (int i=0; i<array2.length; i++)
+//		{
+//			
+//			System.out.println("Array: " + array2[i] );
+//		}
 	}
 
 	private static void ATM() {

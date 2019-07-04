@@ -29,6 +29,55 @@ public class TestClass {
 		return input;	
 	}
 	
+	public static String CompareArrays(int [] array1, int [] array2)
+	{
+		
+		String result = null;
+		if (array1.length == array2.length)
+		{
+			for (int i=0; i<array1.length; i++)
+			{
+				if (array1[i]!=array2[i])
+				{
+					result = "Not equal!";
+					System.out.println(result);
+					break;
+				}
+			}
+		}
+		else
+		{
+			result = "Not equal! Lengths are different";
+			System.out.println("result");
+		}
+
+		return result;
+	}
+	
+	public static String SortArray(int [] array2)
+	{
+		int temp=0;
+		for (int i=0; i<array2.length; i++)
+		{
+			for (int j=0; j<array2.length;j++)
+			{
+				if (array2[j] > array2[i])
+				{
+					temp=array2[i];
+					array2[i]=array2[j];
+					array2[j]=temp;
+				}
+			}
+		}
+		for (int i=0; i<array2.length; i++)
+		{
+			
+			System.out.println("Array: " + array2[i] );
+		}
+		return null;
+		
+	}
+	
 	public static int BetweenTheDates(int[] input1, int [] input2) 
 	{
 		int DaysInYear=365;
